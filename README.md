@@ -6,7 +6,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -23,14 +22,10 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Screenshot
-
-![ScreenShot of design](./images/Screenshot.png)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://githbu.com/master-x2000/commingsoon)
-- Live Site URL: [Add live site URL here](https://master-x2000.github.io/comingsoon/)
+- Solution URL: [Add solution URL here](https://github.com/master-x2000/commingsoon)
+- Live Site URL: [Add live site URL here](https://master-x2000.github.io/commingsoon/)
 
 ## My process
 
