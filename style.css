@@ -142,7 +142,7 @@ body{
 
 .bg-hero{
     height:100svh;
-    background-image: url(/images/hero-desktop.jpg);
+    background-image: url(images/hero-desktop.jpg);
     background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -198,4 +198,5 @@ body{
 }
 
 .attribution { font-size: 11px; text-align: center; }
+
 .attribution a { color: hsl(228, 45%, 44%); }
