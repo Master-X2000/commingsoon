@@ -1,0 +1,201 @@
+/* || FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* || RESETS */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root{
+    --CLR-100: hsl(0, 36%, 70%);
+    --CLR-200: hsl(0, 93%, 68%);
+    --CLR-300: hsl(0, 6%, 24%);
+    --GRADIENT-100: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --GRADIENT-BTN: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+/* || STYLES */
+body{
+    display:grid;
+    grid-template-columns: 55% 45%;
+    align-items:center;
+    height:100svh;
+
+}
+
+.note{
+    padding:2rem;
+    padding-left:6rem;
+    height:100svh;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.page-logo{
+    margin-top:1rem;
+    margin-bottom: 3rem;
+}
+
+.note .header{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    font-size:2.5rem;
+    letter-spacing: 8px;
+    font-weight:600;
+    text-transform: uppercase;
+    color: var(--CLR-300);
+}
+
+.highlight-one{
+    color: var(--CLR-100);
+    font-weight:300;
+}
+
+.note .text{
+    color: var(--CLR-100);
+    font-size:1rem;
+    font-weight:400;
+    margin-block:2rem;
+    max-width:450px;
+    line-height:1.4;
+}
+
+.email-form{
+    display:flex;
+    gap:1rem;
+    justify-content:space-between;
+    align-items:center;
+    max-width:425px;
+    border: 1px solid var(--CLR-100);
+    height:36px;
+    border-radius: 1000000px;
+    padding-left:1rem;
+    margin-bottom: 1rem;
+    position:relative;
+}
+
+.email-form .email-input{
+    border:none;
+    outline:none;
+    width:100%;
+    color: var(--CLR-300);
+    font-size:1rem;
+    background-color: transparent;
+}
+
+.email-form .email-input::placeholder{
+    color: var(--CLR-100);
+}
+
+.email-form .error{
+    display:none;
+    color: var(--CLR-200)
+}
+
+.email-form.invalid:invalid{
+    border-color: var(--CLR-200);
+    margin-bottom: .25rem;
+}
+
+.email-form.invalid:invalid .error{
+    display:block;
+}
+
+.email-form .submit-btn{
+    width:70px;
+    height:36px;
+    border:none;
+    outline:none;
+    border-radius: 100000px;
+    background-image: var(--GRADIENT-BTN);
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.email-form .submit-btn:hover{
+    transform: scale(1.1) translateX(5px);
+}
+
+.error-prompt{
+    display:none;
+    font-size:16px;
+    font-weight:400;
+    color: var(--CLR-200);
+    margin-bottom:1rem;
+    padding-left: 1rem;
+}
+
+.email-form.invalid:invalid ~ .error-prompt{
+    display:block;
+}
+
+.bg-hero{
+    height:100svh;
+    background-image: url(/images/hero-desktop.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* || MEDIA QUERY */
+@media screen and (max-width: 775px) {
+    .note{
+        padding-left:4rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .note{
+        padding-left:3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .page-logo{
+        margin-block:2rem;
+        position:absolute;
+        top:0;
+        left:2rem;
+    }
+
+    .note{
+        padding:2rem 3rem;
+        height:fit-content;
+        text-align:center;
+        width:100%;
+    }
+
+    body{
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        height:fit-content;
+    }
+
+    .bg-hero{
+        height:40svh;
+        width:100%;
+        background-position: top;
+        margin-block:6rem 1rem;
+        background-image: url(/images/hero-mobile.jpg);
+        background-position: left;
+    }
+
+    .note .text{
+        margin-block:1rem 2rem;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
